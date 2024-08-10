@@ -1,0 +1,190 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+2) font-family: 'Poppins', sans-serif;
+----------------------------------------*****/
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* margin-right: 200px; */
+}
+section .imgBx{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+section .imgBx:before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, white, rgb(133, 108, 64));
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Add this to your existing CSS */
+section .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1; /* Ensure imgBx is below contentBx */
+}
+
+section .contentBx {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    /* Adjust this value based on your layout */
+    width: 50%;
+    height: 100%;
+    background-color: white; /* Add a background color for contentBx */
+    /* z-index: 2; Ensure contentBx is above imgBx */
+    /* padding: 20px; Add some padding for the form */
+    box-sizing: border-box; 
+    /* Ensure padding is included in width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+}
+
+/* Additional styles for the form */
+section .contentBx .formBx {
+    width: 50%;
+    /* max-width: 400px; */
+    /* text-align: center; */
+}
+
+section .contentBx .formBx h2 {
+    margin-bottom: 20px;
+    color: rgb(247, 162, 6);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    letter-spacing: 1px;
+}
+
+section .contentBx .formBx {
+    margin-bottom: 20px;
+}
+
+section .contentBx .formBx span {
+   font-size: 18px;
+   display: inline-block;
+   font-weight: 600;
+   margin-bottom: 5px;
+   letter-spacing: 1px;
+   color: black;
+}
+section .contentBx .formBx input{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid rgb(247, 162, 6);
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    background: transparent;
+    border-radius: 30px;
+}
+section .contentBx .formBx .button{
+    width: 40%;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid rgb(247, 162, 6);
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: black;
+    background: rgb(247, 162, 6);
+    border-radius: 30px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+/* section .contentBx .formBx .inputBx input[type="submit"]{
+    background: rgb(247, 162, 6);
+color: white;
+border: none;
+outline: none;
+font-weight: 500;
+/* cursor: pointer; */
+/* }
+section .contentBx .formBx .inputBx input[type="submit"]:hover{
+    background: rgb(228, 159, 19);
+}  */
+section .contentBx .formBx .remember{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+}
+section .contentBx .formBx input{
+    color: black;
+    font-size: 20px;
+margin-bottom: 10px;
+}
+/* section .contentBx .formBx .inputBx p a{
+    color: rgb(247, 162, 6);
+    font-size: 20px;
+} */
+@media (max-width:768px)
+{
+section .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section .contentBx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+section .contentBx .formBx{
+    width: 100%;
+    padding: 40px;
+    background: rgba(247, 247, 247, 0.9);
+    margin: 50px;
+}
+}
